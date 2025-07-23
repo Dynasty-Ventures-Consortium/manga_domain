@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:manga_domain/pages/signup.dart';
 import 'package:manga_domain/services/theme.dart';
 import 'package:manga_domain/widgets/red_button.dart';
 import 'package:manga_domain/widgets/underlined_button.dart';
@@ -33,7 +34,7 @@ class _WelcomeState extends State<Welcome> {
             textAlign: TextAlign.center,
           ),
           Spacer(),
-          RedButton(title: 'Get Started', width: 350, height: 40),
+          RedButton(title: 'Get Started', width: 350, height: 40, goToPage: Signup(),),
           UnderlinedButton(title: "Skip"),
           SizedBox(height: 15),
         ],

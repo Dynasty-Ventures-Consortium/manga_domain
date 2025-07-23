@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:manga_domain/pages/temp_page.dart';
 import 'package:manga_domain/services/theme.dart';
 import 'package:manga_domain/widgets/custom_checkbox.dart';
 import 'package:manga_domain/widgets/input_box.dart';
@@ -44,7 +45,7 @@ class _LoginState extends State<Login> {
                   InputBox(title: "Password"),
                   CustomCheckbox(),
                   UnderlinedButton(title: "Forgot Password?"),
-                  RedButton(title: "Login", width: 400, height: 45),
+                  RedButton(title: "Login", width: 400, height: 45, goToPage: TempPage(),),
                   SizedBox(height: 10.0),
                   const Text(
                     "Or sign in with",

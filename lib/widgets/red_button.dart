@@ -7,17 +7,24 @@ class RedButton extends StatelessWidget {
     required this.title,
     required this.width,
     required this.height,
+    required this.goToPage,
   });
 
   final double width;
   final double height;
   final String title;
+  final Widget goToPage;
 
   @override
   Widget build(BuildContext context) {
     return Center(
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => goToPage),
+          );
+        },
         style: ButtonStyle(
           backgroundColor: WidgetStateProperty.all<Color>(red),
           foregroundColor: WidgetStateProperty.all<Color>(Colors.white),

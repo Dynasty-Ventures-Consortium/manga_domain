@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:manga_domain/pages/login.dart';
+import 'package:manga_domain/pages/temp_page.dart';
 import 'package:manga_domain/services/theme.dart';
 import 'package:manga_domain/widgets/input_box.dart';
 import 'package:manga_domain/widgets/red_button.dart';
@@ -43,7 +45,12 @@ class _SignupState extends State<Signup> {
                   SizedBox(height: 20.0),
                   InputBox(title: "Password"),
                   SizedBox(height: 20.0),
-                  RedButton(title: "Login", width: 400, height: 45),
+                  RedButton(
+                    title: "Sign Up",
+                    width: 400,
+                    height: 45,
+                    goToPage: Login(),
+                  ),
                   SizedBox(height: 10.0),
                   UnderlinedButton(title: "Already have an account? Log in"),
                 ],
