@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:manga_domain/pages/forgot_password.dart';
 import 'package:manga_domain/pages/signup.dart';
 import 'package:manga_domain/pages/temp_page.dart';
 import 'package:manga_domain/services/theme.dart';
@@ -45,8 +46,16 @@ class _LoginState extends State<Login> {
                   SizedBox(height: 20.0),
                   InputBox(title: "Password"),
                   CustomCheckbox(),
-                  UnderlinedButton(title: "Forgot Password?"),
-                  RedButton(title: "Login", width: 400, height: 45, goToPage: TempPage(),),
+                  UnderlinedButton(
+                    title: "Forgot Password?",
+                    goToPage: ForgotPassword(),
+                  ),
+                  RedButton(
+                    title: "Login",
+                    width: 400,
+                    height: 45,
+                    goToPage: TempPage(),
+                  ),
                   SizedBox(height: 10.0),
                   const Text(
                     "Or sign in with",
@@ -64,7 +73,10 @@ class _LoginState extends State<Login> {
                       MaroonButton(title: "Facebook", width: 150, height: 40),
                     ],
                   ),
-                  UnderlinedButton(title: "Don't have an account? Sign Up", goToPage: Signup(),),
+                  UnderlinedButton(
+                    title: "Don't have an account? Sign Up",
+                    goToPage: Signup(),
+                  ),
                 ],
               ),
             ),
