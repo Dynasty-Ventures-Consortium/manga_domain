@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:manga_domain/pages/signup.dart';
 import 'package:manga_domain/pages/temp_page.dart';
 import 'package:manga_domain/services/theme.dart';
 import 'package:manga_domain/widgets/custom_checkbox.dart';
@@ -63,7 +64,7 @@ class _LoginState extends State<Login> {
                       MaroonButton(title: "Facebook", width: 150, height: 40),
                     ],
                   ),
-                  UnderlinedButton(title: "Don't have an account? Sign Up"),
+                  UnderlinedButton(title: "Don't have an account? Sign Up", goToPage: Signup(),),
                 ],
               ),
             ),

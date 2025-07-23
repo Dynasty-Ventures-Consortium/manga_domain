@@ -51,7 +51,7 @@ class _SignupState extends State<Signup> {
                     goToPage: Login(),
                   ),
                   SizedBox(height: 10.0),
-                  UnderlinedButton(title: "Already have an account? Log in"),
+                  UnderlinedButton(title: "Already have an account? Log in", goToPage: Login(),),
                 ],
               ),
             ),
