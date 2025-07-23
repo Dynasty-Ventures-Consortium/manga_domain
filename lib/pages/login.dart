@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:manga_domain/services/theme.dart';
 import 'package:manga_domain/widgets/custom_checkbox.dart';
 import 'package:manga_domain/widgets/input_box.dart';
+import 'package:manga_domain/widgets/underlined_button.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -40,6 +41,7 @@ class _LoginState extends State<Login> {
                   SizedBox(height: 20.0),
                   InputBox(title: "Password"),
                   CustomCheckbox(),
+                  UnderlinedButton(title: "Forgot Password?"),
                 ],
               ),
             ),

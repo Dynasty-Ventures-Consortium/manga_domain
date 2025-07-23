@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:manga_domain/services/theme.dart';
 
 class CustomCheckbox extends StatefulWidget {
   const CustomCheckbox({super.key});
@@ -9,7 +10,7 @@ class CustomCheckbox extends StatefulWidget {
 
 class _CustomCheckboxState extends State<CustomCheckbox> {
   bool _remember = false;
-  
+
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -30,6 +31,8 @@ class _CustomCheckboxState extends State<CustomCheckbox> {
               _remember = value!;
             });
           },
+          side: BorderSide(color: textSubColor, width: 2),
+          activeColor: textSubColor,
         ),
       ],
     );
