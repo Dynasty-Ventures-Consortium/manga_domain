@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:manga_domain/pages/login.dart';
-import 'package:manga_domain/pages/welcome.dart';
 
 void main() {
   runApp(const MyApp());
