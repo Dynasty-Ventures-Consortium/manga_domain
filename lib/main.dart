@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:manga_domain/pages/signup.dart';
+import 'package:manga_domain/pages/welcome.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       //   primaryColor: Color(0xFFEA2831),
       //   buttonTheme: ButtonThemeData(buttonColor: Color(0xFFEA2831)),
       // ),
-      home: Signup(),
+      home: Welcome(),
     );
   }
 }

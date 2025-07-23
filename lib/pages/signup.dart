@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:manga_domain/pages/login.dart';
-import 'package:manga_domain/pages/temp_page.dart';
 import 'package:manga_domain/services/theme.dart';
 import 'package:manga_domain/widgets/input_box.dart';
 import 'package:manga_domain/widgets/red_button.dart';
